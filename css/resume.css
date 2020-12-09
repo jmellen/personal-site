@@ -1,0 +1,110 @@
+header h1,
+header h2,
+header h3,
+header h4,
+section h4,
+section h5,
+section h6 {
+    margin-top: 0;
+}
+
+#toc {
+    position: fixed;
+    right: 4px;
+    top: 4px;
+    z-index: 3;
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 18px;
+}
+
+.job {
+    margin-bottom: 2em;
+}
+
+h6.job-location {
+    font-weight: normal;
+}
+
+.job-detail ul {
+    margin-left: -20px;
+}
+
+.job-detail ul li {
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    #toc {
+        display: none;
+    }
+    .job-date {
+        background-color: #eee;
+        margin-bottom: 1em;
+    }
+
+    header h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .job-date h6 {
+        display: inline;
+    }
+
+    h6.job-location:before {
+        content: '\b7';
+        font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: bold;
+        margin: 0 0.4em;
+        font-size: 16px;
+    }
+}
+
+@media print {
+    body {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    #toc {
+        display: none;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    h4, h5 {
+        font-size: 14px;
+        float: left;
+    }
+
+    h4:after {
+        content: "\b7";
+        margin: 0 0.25em;
+    }
+
+    ul, p {
+        clear: left;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .job-detail ul li {
+        margin-bottom: 0.25em;
+    }
+}

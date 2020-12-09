@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    vertical-align: middle;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2_v30 {
+    margin-top: 25px;
+    margin-bottom: 13px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.h30 {
+    height: 30px;
+    margin-left: 10px;
+}
+
+#headlands {
+    height: 150px;
+    background-image: url(/img/coast.jpg);
+    background-position: 100% -125px;
+    padding-left: 0px;
+    margin-bottom: 1.5em;
+}
+
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+ all and (-o-min-device-pixel-ratio: 3/2),
+ all and (min--moz-device-pixel-ratio: 1.5),
+ all and (min-device-pixel-ratio: 1.5) {
+ 
+  #headlands {
+    background-image: url(/img/coast@2x.jpg);
+    background-size: 800px 600px;
+  }
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .centerer {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font: 0/0 a;
+    }
+
+    .centerer:before {
+        content: '';
+        vertical-align: middle;
+        display: inline-block;
+        height: 100%;
+    }
+
+    .centerer > .container {
+        max-width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        font: 16px/1 Georgia, "Times New Roman", Times, serif;
+        line-height: 1.4285714;
+        text-align: left;
+    }
+}
